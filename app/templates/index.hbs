@@ -1,0 +1,23 @@
+
+<h4>Source code at <a href="http://github.com/jerel/poc">http://github.com/jerel/poc</a></h4>
+
+{{leaflet-map locations=controller.filteredContent popup="popUpClicked" marker="markerClicked"}}
+
+<h1>{{popUpMessage}}</h1>
+<h1>{{markerMessage}}</h1>
+
+Toggle Types:
+<label>
+  {{input type="checkbox" checked=first}}
+  First Half
+</label>
+
+<label>
+  {{input type="checkbox" checked=last}}
+  Last Half
+</label>
+
+<h6>this renders after the map</h6>
+
+{{link-to 'Route with no map' 'empty'}}
+

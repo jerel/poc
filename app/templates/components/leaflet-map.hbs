@@ -1,0 +1,11 @@
+
+{{leaflet-tile-layer map=map}}
+
+{{#each location in locations}}
+    {{! I usually wrap with a conditional to observe something like location.onMap }}
+    {{leaflet-marker location=location map=map action="markerClicked"}}
+
+    {{! a conditional for location.popUpOpen saves us from needlessly rendering the popup }}
+    {{leaflet-popup location=location action="popUpClicked"}}
+{{/each}}
+
