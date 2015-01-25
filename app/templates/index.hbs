@@ -1,7 +1,9 @@
 
 <h4>Source code at <a href="http://github.com/jerel/poc">http://github.com/jerel/poc</a></h4>
 
-{{leaflet-map locations=controller.filteredContent popup="popUpClicked" marker="markerClicked"}}
+{{#leaflet-map locations=controller.filteredContent popup="popUpClicked" marker="markerClicked"}}
+  {{leaflet-tile-layer}}
+{{/leaflet-map}}
 
 <h1>{{popUpMessage}}</h1>
 <h1>{{markerMessage}}</h1>

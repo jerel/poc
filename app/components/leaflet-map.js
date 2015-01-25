@@ -4,6 +4,7 @@ window.L.Icon.Default.imagePath = '/assets/leaflet';
 
 export default Ember.Component.extend({
   classNames: ['leaflet-map'],
+  map: null,
   render: function(buffer) {
     var mapElement = document.createElement('div');
     buffer._element.appendChild(mapElement);
